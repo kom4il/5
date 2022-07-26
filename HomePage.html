@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-image: url(Tools/Bk.jpg);
+            background-attachment:inherit;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .head{
+            border: 2px solid white;
+            width: 1550px;
+            height: 500px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; align-items: center;
+            color: aliceblue;
+        }
+        .body{
+            background-color: black;
+            width: 975px;
+            margin: auto;
+            padding-left: 25px;
+            padding-top: 25px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+        .foot{
+            border: 2px solid white;;
+            width: 1520px;
+            height: 220px;
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            justify-content: space-between;
+        }
+        #List{
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+            justify-content: space-between;
+        }
+        #List p{
+            
+        }
+        #cards{
+            background-image: url(tools/CP.png);
+            width: 300px;
+            height: 360px;
+            margin-bottom: 25px;
+            margin-right: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #pic{
+            width: 275px;
+            height: 275px;
+        }
+        #type{
+            width: 275px;
+            height: 60px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #cnames{
+            margin: auto;
+            font-size: 30px;
+        }
+        @font-face{
+            font-family: Font1;
+            src: url(Fonts/JimmyCollinsDemoVersion-gx0LY.ttf);
+        }
+        h1{
+            font-family: Font1;
+            font-size: 50px;
+            letter-spacing: 5px;
+            word-spacing: 15px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited {
+            color: black;
+        }
+        #foots{
+            border: 2px solid white;;
+            width: 500px;
+            height: 200;
+        }
+        #Layer{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+            opacity: 0;
+        }
+        #Layer:hover{
+            background-color: rgba(0, 0, 0, 0.65);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        .MIJ:hover{
+            background-image: url(flags/MIJ.png);
+        }
+        .MIU:hover{
+            background-image: url(flags/MIU.png);
+        }
+        .MIG:hover{
+            background-image: url(flags/MIG.png);
+        }
+        footer{
+            
+        }
+    </style>
+    <header>
+        <title>Benny Shop</title>
+    </header>
+    <body>
+        <div class="head">
+            <h1>Logo</h1>
+            <div id="List">
+                <p><a href="">home</a></p>
+                <p><a href="">home</a></p>
+                <p><a href="">home</a></p>
+                <p><a href="">home</a></p>
+            </div>
+            <h1>Welcome To NAME</h1>
+            <P>We will show you the best cars can be modify on each country.</P>
+        </div>
+        <div class="body">
+            <div id="cards">
+                <a id="Link" href="JPCar.html">
+                    <img src="Flags/JPD.png" alt="JP" id="pic">
+                    <div id="type"><h1 id="cnames">Japan</h1></div>
+                    <div class="MIJ" id="Layer"></div>
+                </a>
+            </div>
+            <div id="cards">
+                <a id="Link" href="USACars.html">
+                    <img src="Flags/USAD.png" alt="USA" id="pic">
+                    <div id="type"><h1 id="cnames">USA</h1></div>
+                    <div class="MIU" id="Layer"></div>
+                </a>
+            </div>
+            <div id="cards">
+                <a id="Link"href="GMCars.html">
+                    <img src="Flags/GMD.png" alt="GM" id="pic">
+                    <div id="type"><h1 id="cnames">Germany</h1></div>
+                    <div class="MIG" id="Layer"></div>
+                </a>
+            </div>
+            <div id="cards">
+                <!-- <a id="Link" href=""> -->
+                    <img src="Flags/CSoon.png" alt="Soon" id="pic">
+                    <div id="type"><h1 id="cnames"></h1></div>
+                <!--</a>-->
+            </div>
+            <div id="cards">
+                <!-- <a id="Link" href=""> -->
+                    <img src="Flags/CSoon.png" alt="Soon" id="pic">
+                    <div id="type"><h1 id="cnames"></h1></div>
+                <!--</a>-->
+            </div>
+            <div id="cards">
+                <!-- <a id="Link" href=""> -->
+                    <img src="Flags/CSoon.png" alt="Soon" id="pic">
+                    <div id="type"><h1 id="cnames"></h1></div>
+                <!--</a>-->
+            </div>
+        </div>
+        <div class="foot">
+            
+            <div id="foots"></div>
+            <div id="foots"></div>
+            <div id="foots"></div>
+        </div>
+    </body>
+    <footer>
+        <hr>
+        <p>220021446</p>
+    </footer>
+</html>
